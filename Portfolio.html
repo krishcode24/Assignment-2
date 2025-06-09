@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Home - My Personal Website</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="icon" type="image/png" href="images/output-onlinepngtools.png">
+</head>
+
+<body>
+  <header>
+    <br>
+    <h1><b>ꀘꋪꀤꌗꃅꈤꍏ ꌗꍟ꒒ꃴꍏꀘꂦꈤꍟ</b></h1>
+    <br>
+    <img src="images/catrunx2.gif" alt="Running Cat" class="sleeping-cat1">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biodata.html">About Me</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+<br>
+
+<section id="portfolio" class="portfolio-section">
+  <h2>My Portfolio</h2>
+  <p class="portfolio-intro">Explore some of my favorite and aesthetic works.</p>
+
+  <div class="masonry-grid">
+    <div class="masonry-item" onclick="openOverlay('Mirrored potrait', 'A creative mirror image of a potrait.')">
+      <img src="images/featured1.jpg" alt="Mirror image">
+    </div>
+    <div class="masonry-item" onclick="openOverlay('Fade into exists', 'Dried up Gypsophila paniculata, also known as babys breath found in the bouquet as a filler.')">
+      <img src="images/featured2.JPG" alt="Dead flowers">
+    </div>
+    <div class="masonry-item" onclick="openOverlay(' Echoes of light', 'A long-exposure photograph capturing a light in motion.')">
+      <img src="images/featured3.JPG" alt="light motion">
+    </div>
+    <div class="masonry-item" onclick="openOverlay('The beauty of gateway', 'My favorite temple gateway in my hometown, showcasing its intricate design and cultural significance.')">
+      <img src="images/featured4.jpg" alt="Temple Gateway">
+    </div>
+    <div class="masonry-item" onclick="openOverlay('Cat uwu', 'Taking a close up view of a cat.')">
+      <img src="images/featured5.jpg" alt="cat">
+    </div>
+    <div class="masonry-item" onclick="openOverlay('Blooming away', 'A serene view of a yellow Hibiscus rosasinensis.')">
+      <img src="images/featured6.jpg" alt="Bloom">
+    </div>
+    <div class="masonry-item" onclick="openOverlay('Dead from inside', 'Commonly known as a money plant in many parts of Indian subcontinent. The plant is a youngling meaning it just started to sprot. Yet, it has faced some difficulty growing by the environment.')">
+      <img src="images/featured7.jpg" alt="Plant">
+    </div>
+    <div class="masonry-item" onclick="openOverlay('The beauty of Smile', 'A statue of a Goddess in Hindu culture named Saraswati. She is the Goddess of knowledge and art.')">
+      <img src="images/featured8.jpg" alt="Goddess of knowledge">
+    </div>
+    <div class="masonry-item" onclick="openOverlay('Standing alone', 'A serene view of a tree, capturing the tranquility of nature.')">
+      <img src="images/featured9.jpg" alt="Treee">
+    </div>
+    <div class="masonry-item" onclick="openOverlay('Walking away', 'A serene view of cows and cattle walking in the paddy field.')">
+      <img src="images/featured10.jpg" alt="Cattle">
+    </div>
+    <div class="masonry-item" onclick="openOverlay('Mannequin family', 'A cute mannequins of dad and son dressing tradisionally hindu cultured.')">
+      <img src="images/featured11.jpg" alt="mannequin">
+    </div>
+    <div class="masonry-item" onclick="openOverlay('The Beauty of Butterfly', 'A marvelous view of a white butterfly surrounded by grass.')">
+      <img src="images/featured12.jpg" alt="butterfly">
+    </div>
+    <div class="masonry-item" onclick="openOverlay('Seranade of Sunset', 'A serene view of the Sunset taken in Krabi.')">
+      <img src="images/featured13.jpg" alt="Sunset">
+    </div>
+    <div class="masonry-item" onclick="openOverlay('The Thunder', 'A lightning Strike which capturing in a picture was really difficult hehe.')">
+      <img src="images/featured14.png" alt="Thunder">
+    </div>
+    <div class="masonry-item" onclick="openOverlay('Moonkiss Night', 'A nightsky of moon and stars shining through the night.')">
+      <img src="images/featured15.jpg" alt="Moon">
+    </div>
+    <div class="masonry-item" onclick="openOverlay('Love Hands', 'A serene view of a couple holding hands in their car.')">
+      <img src="images/featured16.jpeg" alt="hands">
+    </div>
+    <div class="masonry-item" onclick="openOverlay('Birth of Date Tower', 'A serene view of a lake surrounded by trees, capturing the tranquility of nature.')">
+      <img src="images/featured17.jpg" alt="Tower">
+    </div>
+    <div class="masonry-item" onclick="openOverlay('Bridge', 'Bridge.')">
+      <img src="images/featured18.jpg" alt="bridge">
+    </div>
+    <div class="masonry-item" onclick="openOverlay('Train to Paradise', 'A serene view of Train track to Penang Hill.')">
+      <img src="images/featured19.jpg" alt="train">
+    </div>
+    <div class="masonry-item" onclick="openOverlay('The beauty of Peacock', 'My eye opener for ever getting myslef into photography is this image.')">
+      <img src="images/featured20.jpg" alt="Peacock">
+    </div>
+  </div>
+
+  <div id="overlay" class="overlay">
+    <div class="overlay-content">
+      <span class="close-btn" onclick="closeOverlay()">&times;</span>
+      <h3 id="overlay-title"></h3>
+      <p id="overlay-desc"></p>
+    </div>
+  </div>
+</section>
+<script>
+  function openOverlay(title, desc) {
+    document.getElementById('overlay-title').innerText = title;
+    document.getElementById('overlay-desc').innerText = desc;
+    document.getElementById('overlay').style.display = 'flex';
+  }
+
+  function closeOverlay() {
+    document.getElementById('overlay').style.display = 'none';
+  }
+</script>
+
+<footer>
+  <p>&copy; 2025 Krishna Selvakone. All rights reserved.</p>
+  <div id="digital-clock" class="digital-clock"></div>
+<div class="social-links" aria-label="Social media links">
+      <a href="https://github.com/krishcode24" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg role="img" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M12 0C5.37 0 0 5.372 0 12c0 5.303 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577v-2.234c-3.338.726-4.033-1.613-4.033-1.613-.546-1.386-1.333-1.754-1.333-1.754-1.089-.745.083-.73.083-.73 1.205.086 1.84 1.236 1.84 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.76-1.604-2.665-.306-5.466-1.337-5.466-5.934 0-1.312.468-2.386 1.236-3.228-.125-.303-.536-1.522.117-3.176 0 0 1.008-.323 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.02.005 2.047.138 3.003.404 2.29-1.553 3.296-1.23 3.296-1.23.656 1.654.245 2.873.12 3.176.77.842 1.235 1.916 1.235 3.228 0 4.61-2.805 5.624-5.475 5.922.43.372.815 1.103.815 2.222v3.293c0 .32.192.693.8.576C20.565 21.796 24 17.297 24 12c0-6.628-5.373-12-12-12z"/>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/krish24j/" target="_blank" rel="noopener" aria-label="Instagram">
+    <svg role="img" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm4.25 3.25a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0 1.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm4.75-.75a1.125 1.125 0 1 1 0 2.25 1.125 1.125 0 0 1 0-2.25Z"/>
+    </svg>
+  </a>
+      <a href="https://x.com/Krish24j" target="_blank" rel="noopener" aria-label="Twitter">
+        <svg role="img" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M23 3a10.9 10.9 0 0 1-3.14.86 4.48 4.48 0 0 0 1.98-2.48c-.87.52-1.83.88-2.85 1.08a4.49 4.49 0 0 0-7.67 4.1 12.74 12.74 0 0 1-9.25-4.7 4.48 4.48 0 0 0 1.39 6 4.4 4.4 0 0 1-2.04-.57v.06a4.51 4.51 0 0 0 3.6 4.43 4.5 4.5 0 0 1-2.03.07 4.5 4.5 0 0 0 4.2 3.13A9.02 9.02 0 0 1 2 19.54 12.74 12.74 0 0 0 8.66 21c7.88 0 12.2-6.53 12.2-12.18 0-.19 0-.38-.01-.57A8.72 8.72 0 0 0 23 3z"/>
+        </svg>
+      </a>
+    </div>
+    <div id="digital-clock" class="digital-clock" aria-label="Current date and time"></div>
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const clock = document.getElementById('digital-clock');
+      const dateStr = now.toLocaleDateString();
+      const timeStr = now.toLocaleTimeString();
+      clock.textContent = dateStr + " - " + timeStr;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+</footer>
+</body>
+</html>
